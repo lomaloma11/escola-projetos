@@ -4,54 +4,158 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="ratoicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
     <title>Meu portfólio</title>
   </head>
-  <body>
+
+  <body style="background: linear-gradient(to right, #0f2027, #203a43, #2c5364); min-height: 100vh; color: white;">
     <header class="container text-center mt-4">
-      <img src="picrato1.jpg" alt="avatar da Palloma" class="rounded-circle" width="150" height="150" />
-      <p class="lead">Eu sou a Palloma</p>
-      <h1 class="mb-4">Eu estudo Programação</h1>
-      <p>
+      <img src="picrato1.jpg" alt="avatar da Palloma" class="rounded-circle" width="150px" height="150px" />
+      <p class="lead fs-4 mt-4">Eu sou a Palloma</p>
+      <h1 class="mb-4">Eu estudo Programação na escola</h1>
+      <p class="fs-4">
         Eu sou uma estudante do 3°B na escola Idalina Ferreira Ladeira. Atualmente vejo
         programação na plataforma do Alura, a qual já me proporcionou contato com HTML, CSS e JavaScript.
       </p>
       <div>
-        <span class="badge bg-info">HTML</span>
-        <span class="badge bg-info">CSS</span>
-        <span class="badge bg-info">JavaScript</span>
-        <span class="badge bg-info">Scratch</span>
-      </div>
+        <span class="badge bg-light text-dark me-1 fs-5">HTML</span>
+        <span class="badge bg-info text-dark me-1 fs-5">CSS</span>
+        <span class="badge bg-light text-dark me-1 fs-5">JavaScript</span>
+        <span class="badge bg-info text-dark me-1 fs-5">Scratch</span>
+    </div>
     </header>
+
     <main class="container mt-5">
       <h2 class="mb-4 text-center">Meus projetos</h2>
       <div class="row justify-content-center">
+        <!-- Card 1 -->
         <div class="col-sm-12 col-md-4 mb-4">
-          <div class="card h-100 shadow">
-            <img src="picrato1.jpg" class="card-img-top" alt="Projeto 1">
+          <div class="card h-100 shadow border rounded-4 overflow-hidden p-3" style="background-color: rgba(255, 255, 255, 0.9); color: black;">
+            <img src="jogodecorrida.png" class="card-img-top" alt="Projeto 1">
             <div class="card-body">
               <h5 class="card-title">Projeto 1</h5>
               <p class="card-text">
-                Esse projeto foi desenvolvido durante os estudos de HTML e CSS. Nele, aprendi a criar estruturas básicas de uma página.
+                Esse projeto foi desenvolvido durante meus estudos de JavaScript, onde aprendi a usar loops e arrays para criar a estrutura básica de um jogo de corrida.
+                 Trabalhei no controle da movimentação dos objetos e na lógica para atualizar suas posições, melhorando minha compreensão sobre interatividade e programação dinâmica.
               </p>
-              <button type="button" class="btn btn-link">Ver projeto</a>
+              <a href="#" class="btn botao-projeto" data-bs-toggle="modal" data-bs-target="#modalProjeto1">Ver projeto</a>
             </div>
           </div>
         </div>
+
+        <!-- Card 2 -->
         <div class="col-sm-12 col-md-4 mb-4">
-            <div class="card h-100 shadow">
-              <img src="picrato1.jpg" class="card-img-top" alt="Projeto 1">
-              <div class="card-body">
-                <h5 class="card-title">Projeto 1</h5>
-                <p class="card-text">
-                  Esse projeto foi desenvolvido durante os estudos de HTML e CSS. Nele, aprendi a criar estruturas básicas de uma página.
-                </p>
-                <button type="button" class="btn btn-link">Ver projeto</a>
-              </div>
+          <div class="card h-100 shadow border rounded-4 overflow-hidden p-3" style="background-color: rgba(255, 255, 255, 0.9); color: black;">
+            <img src="quentefrio.png" class="card-img-top" alt="Projeto 2">
+            <div class="card-body">
+              <h5 class="card-title">Projeto 2</h5>
+              <p class="card-text">
+                Esse projeto foi desenvolvido durante os estudos de JavaScript, com foco em criar a estrutura básica para a coordenação e movimentação de objetos em um ambiente gráfico.
+                Utilizei a biblioteca p5.js para desenhar e manipular elementos na tela, explorando conceitos importantes como variáveis, funções, e controle de fluxo.
+              </p>
+              <a href="#" class="btn botao-projeto" data-bs-toggle="modal" data-bs-target="#modalProjeto2">Ver projeto</a>
             </div>
           </div>
+        </div>
+        <!-- Card 3 -->
+         <div class="col-sm-12 col-md-4 mb-4">
+          <div class="card h-100 shadow border rounded-4 overflow-hidden p-3" style="background-color: rgba(255, 255, 255, 0.9); color: black;">
+            <img src="monalisa.png" class="card-img-top" alt="Projeto 2">
+            <div class="card-body">
+              <h5 class="card-title">Projeto 3</h5>
+              <p class="card-text">
+                Esse projeto foi desenvolvido durante os estudos de JavaScript com a biblioteca p5.js, focando na criação de um retrato estilizado com elementos gráficos básicos, como círculos, linhas e triângulos. 
+                O principal desafio foi implementar a interatividade nos olhos, que acompanham o movimento do mouse em tempo real, utilizando a função map() para traduzir a posição do cursor para os limites das pupilas.
+              </p>
+              <a href="#" class="btn botao-projeto" data-bs-toggle="modal" data-bs-target="#modalProjeto3">Ver projeto</a>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
+
+    <!-- Modal Projeto 1 -->
+    <div class="modal fade" id="modalProjeto1" tabindex="-1" aria-labelledby="tituloProjeto1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content text-dark">
+          <div class="modal-header">
+            <h5 class="modal-title" id="tituloProjeto1">Detalhes do Projeto 1</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+           Esse projeto foi desenvolvido durante os meus estudos de JavaScript na plataforma Alura. Durante o processo, aprendi a criar estruturas básicas de um jogo de corrida, utilizando conceitos fundamentais como loops e arrays.
+           Além disso, explorei lógica condicional e controle de eventos para tornar a experiência interativa. 
+           Essa prática foi essencial para reforçar meu entendimento da linguagem e desenvolver meu raciocínio lógico na construção de aplicações dinâmicas.
+          </div>
+          <div class="modal-footer">
+                <a href="https://editor.p5js.org/PallomaSantos/full/auz99S-zm" class="modal-footerA">Ver projeto ao vivo</a>
+                <a href="https://editor.p5js.org/PallomaSantos/sketches/auz99S-zm" class="modal-footerA">Ver código do projeto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Projeto 2 -->
+    <div class="modal fade" id="modalProjeto2" tabindex="-1" aria-labelledby="tituloProjeto2" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content text-dark">
+          <div class="modal-header">
+            <h5 class="modal-title" id="tituloProjeto2">Detalhes do Projeto 2</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            No código, inicializei variáveis que representam posições no eixo X e Y, atribuindo valores aleatórios para posicionar os objetos inicialmente dentro do espaço do canvas. A função setup() prepara o ambiente, enquanto a função draw() é responsável por atualizar a tela em tempo real, movendo o objeto de maneira aleatória, mas limitada pelos limites da área visível, utilizando a função constrain().
+
+Além disso, implementei o cálculo da distância entre o cursor do mouse e o objeto, permitindo criar uma interação visual dinâmica: um círculo desenhado em torno do cursor cresce ou diminui dependendo da proximidade do objeto. Quando o objeto e o cursor estão muito próximos, uma mensagem é exibida na tela, e a animação é interrompida com o noLoop(), demonstrando controle sobre o fluxo da aplicação.
+
+Esse exercício foi fundamental para consolidar meu entendimento sobre a movimentação controlada de objetos, a interação do usuário com elementos gráficos, e o uso de funções matemáticas para manipulação visual dinâmica.
+          </div>
+          <div class="modal-footer">
+                <a href="https://editor.p5js.org/PallomaSantos/full/GFI5nhz8s" class="modal-footerA">Ver projeto ao vivo</a>
+                <a href="https://editor.p5js.org/PallomaSantos/sketches/GFI5nhz8s" class="modal-footerA">Ver código do projeto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Projeto 3 -->
+    <div class="modal fade" id="modalProjeto3" tabindex="-1" aria-labelledby="tituloProjeto3" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content text-dark">
+          <div class="modal-header">
+            <h5 class="modal-title" id="tituloProjeto3">Detalhes do Projeto 3</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            A composição do rosto foi feita utilizando formas geométricas simples, como círculos para a face e olhos, linhas para a boca e sobrancelhas, e triângulos para o nariz, explorando o conceito de desenho vetorial em um canvas digital. Além disso, o código detecta quando o botão do mouse está pressionado para possibilitar futuras interações, como registro de coordenadas para análise ou efeitos adicionais.
+
+Esse exercício reforçou o entendimento sobre manipulação gráfica, interação do usuário e funções matemáticas aplicadas a gráficos, contribuindo para a base de criação de jogos e animações em JavaScript.
+          </div>
+          <div class="modal-footer">
+                <a href="https://editor.p5js.org/PallomaSantos/full/tmBuUJwJm" class="modal-footerA">Ver projeto ao vivo</a>
+                <a href="https://editor.p5js.org/PallomaSantos/sketches/tmBuUJwJm" class="modal-footerA">Ver código do projeto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="container-fluid text-center mt-5 p-0">
+      <div class="py-5 m-0 p-0" style="background-color: #1c2833;">
+        <h2>Entre em contato</h2>
+        <div>
+          <i class="bi bi-github"></i>
+          <a href="https://github.com/lomaloma11" class="footer-link">GitHub</a>
+        </div>
+        <div>
+          <i class="bi bi-envelope"></i>
+          <a href="mailto:00001141420922sp@al.educacao.sp.gov.br" class="footer-link">Email Escolar</a>
+        </div>        
+        <p class="mt-4 mb-0">© Copyright 2024. Produzido por Palloma Santos</p>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
   </body>

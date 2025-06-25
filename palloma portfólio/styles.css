@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+    --cor-principal: #0f2027;
+    --cor-secundaria: #203a43;
+    --cor-texto:var(--white)
+    --cor-destaque: #2c5364;
+    --white: #ffffff;
+}
+h1, h2, h5 {
+  color: var(--white);
+}   
+
+.footer-link {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: larger;
+  color: var(--cor-texto);
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+}
+
+.footer-link:hover {
+    color:var(--cor-principal);
+}
+
+.botao-projeto {
+  background-color: var(--white); /* Azul claro */
+  color: var(--cor-destaque); /* Azul escuro */
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(44, 83, 100, 0.5);
+}
+
+.botao-projeto:hover {
+  background-color: var(--cor-secundaria); /* Azul médio */
+  transform: scale(1.05);
+}
+
+.mo.modal-footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: var(--cor-secundaria);
+  border-top: 1px solid var(--cor-destaque);
+}
+
+.modal-footerA {
+  background-color: var(--cor-destaque);
+  color: var(--cor-texto);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid var(--white);
+  transition: 0.3s ease;
+}
+
+.modal-footerA:hover {
+  background-color: var(--white);
+  color: var(--cor-principal);
+  border-color: var(--cor-principal);
+}
